@@ -437,7 +437,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
   <!-- Purity extra-projects -->
-  <project path="manifest" name="platform_manifest" remote="kitkatpurity" revision="kitkat" />
+  <project path="manifest" name="kangarom_manifest" remote="lostdeveloper" revision="kitkat" />
   <project path="vendor/asus" name="platform_vendor_asus" remote="kitkatpurity" revision="kitkat" />
   <project path="vendor/widevine" name="platform_vendor_widevine" remote="kitkatpurity" revision="kitkat" />
   <project path="vendor/nvidia" name="platform_vendor_nvidia" remote="kitkatpurity" revision="kitkat" />
