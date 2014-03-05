@@ -5,6 +5,8 @@
            fetch="https://android-review.googlesource.com/" />
   <remote name="kitkatpurity"
            fetch="git://github.com/KitKatPurity/" />
+  <remote name="lostdeveloper"
+           fetch="git://github.com/lostdeveloper/" />
   <remote name="cm"
            fetch="https://github.com/CyanogenMod/"
            review="review.cyanogenmod.com" />
@@ -31,8 +33,8 @@
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="platform_device_asus_flo" groups="device,flo" remote="kitkatpurity" revision="kitkat" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
-  <project path="device/asus/grouper" name="platform_device_asus_grouper" groups="device,grouper" remote="kitkatpurity" revision="kitkat" />
-  <project path="device/asus/tilapia" name="platform_device_asus_tilapia" groups="device,grouper" remote="kitkatpurity" revision="kitkat" />
+  <project path="device/asus/grouper" name="platform_device_asus_grouper" groups="device,grouper" remote="lostdeveloper" revision="kitkat" />
+  <project path="device/asus/tilapia" name="platform_device_asus_tilapia" groups="device,grouper" remote="lostdeveloper" revision="kitkat" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
@@ -44,12 +46,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="platform_device_lge_hammerhead" groups="device,hammerhead" remote="kitkatpurity" revision="kitkat" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="device/lge/mako" name="platform_device_lge_mako" groups="device,mako" remote="kitkatpurity" revision="kitkat" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/manta" name="platform_device_samsung_manta" groups="device,manta" remote="kitkatpurity" revision="kitkat" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -114,12 +111,14 @@
   <project path="external/embunit" name="platform/external/embunit" />
   <project path="external/emma" name="platform/external/emma" />
   <project path="external/esd" name="platform/external/esd" />
+  <project path="external/exfat" name="android_external_exfat" remote="cm" revision="cm-11.0" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/flac" name="platform_external_flac" groups="pdk" remote="kitkatpurity" revision="kitkat" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
+  <project path="external/fuse" name="android_external_fuse" remote="cm" revision="cm-11.0" />
   <project path="external/ganymed-ssh2" name="platform/external/ganymed-ssh2" />
   <project path="external/gcc-demangle" name="platform/external/gcc-demangle" groups="pdk" />
   <project path="external/genext2fs" name="platform/external/genext2fs" />
@@ -191,6 +190,7 @@
   <project path="external/nist-pkits" name="platform/external/nist-pkits" />
   <project path="external/nist-sip" name="platform/external/nist-sip" />
   <project path="external/noto-fonts" name="platform/external/noto-fonts" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="cm" revision="cm-11.0" />
   <project path="external/oauth" name="platform/external/oauth" />
   <project path="external/objenesis" name="platform/external/objenesis" />
   <project path="external/okhttp" name="platform/external/okhttp" />
@@ -245,7 +245,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="kitkatpurity" revision="kitkat" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="kitkatpurity" revision="kitkat" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="lostdeveloper" revision="kitkat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -278,7 +278,7 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="kitkatpurity" revision="kitkat" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="lostdeveloper" revision="linaro-kitkat"  />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
@@ -296,10 +296,10 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
-  <project path="kernel/lge/hammerhead" name="platform_kernel_lge_hammerhead" remote="kitkatpurity" revision="kitkat" />
   <project path="libcore" name="platform_libcore" remote="kitkatpurity" revision="kitkat" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
+  <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="kitkatpurity" revision="kitkat" />
   <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="kitkatpurity" revision="kitkat" />
@@ -309,6 +309,7 @@
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
+  <project path="packages/apps/CMFileManager" name="android_packages_apps_CMFileManager" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="kitkatpurity" revision="kitkat" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="kitkatpurity" revision="kitkat" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="kitkatpurity" revision="kitkat" />
@@ -417,12 +418,12 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="kitkatpurity" revision="kitkat" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="cm" revision="cm-11.0" />
   <project path="system/extras" name="platform_system_extras" groups="pdk" remote="kitkatpurity" revision="kitkat" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="cm" revision="cm-11.0" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -437,8 +438,6 @@
 
   <!-- Purity extra-projects -->
   <project path="manifest" name="platform_manifest" remote="kitkatpurity" revision="kitkat" />
-  <project path="vendor/lge" name="platform_vendor_lge" remote="kitkatpurity" revision="kitkat" />
-  <project path="vendor/samsung" name="platform_vendor_samsung" remote="kitkatpurity" revision="kitkat" />
   <project path="vendor/asus" name="platform_vendor_asus" remote="kitkatpurity" revision="kitkat" />
   <project path="vendor/widevine" name="platform_vendor_widevine" remote="kitkatpurity" revision="kitkat" />
   <project path="vendor/nvidia" name="platform_vendor_nvidia" remote="kitkatpurity" revision="kitkat" />
