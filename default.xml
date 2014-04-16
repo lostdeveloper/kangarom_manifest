@@ -86,7 +86,7 @@
   <project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="platform/external/chromium_org/third_party/libphonenumber/src/phonenumbers" />
   <project path="external/chromium_org/third_party/libphonenumber/src/resources" name="platform/external/chromium_org/third_party/libphonenumber/src/resources" />
   <project path="external/chromium_org/third_party/mesa/src" name="platform/external/chromium_org/third_party/mesa/src" />
-  <project path="external/chromium_org/third_party/openssl" name="platform/external/chromium_org/third_party/openssl" />
+  <project path="external/chromium_org/third_party/openssl" name="platform_external_chromium_org_third_party_openssl" remote="kitkatpurity" revision="kitkat" />
   <project path="external/chromium_org/third_party/opus/src" name="platform/external/chromium_org/third_party/opus/src" />
   <project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" />
   <project path="external/chromium_org/third_party/skia/gyp" name="platform/external/chromium_org/third_party/skia/gyp" />
@@ -201,7 +201,7 @@
   <project path="external/opencv" name="platform/external/opencv" />
   <project path="external/openfst" name="platform/external/openfst" />
   <project path="external/openssh" name="platform/external/openssh" />
-  <project path="external/openssl" name="platform/external/openssl" groups="pdk" />
+  <project path="external/openssl" name="platform_external_openssl" groups="pdk" remote="kitkatpurity" revision="kitkat" />
   <project path="external/oprofile" name="platform/external/oprofile" />
   <project path="external/pixman" name="platform/external/pixman" />
   <project path="external/ppp" name="platform/external/ppp" />
@@ -355,7 +355,7 @@
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" remote="kitkatpurity" revision="kitkat" />
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="kitkatpurity" revision="kitkat" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="kitkatpurity" revision="kitkat" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="kitkatpurity" revision="kitkat" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
