@@ -11,7 +11,7 @@
            fetch="https://github.com/CyanogenMod/"
            review="review.cyanogenmod.com" />
   <remote name="slim"
-           fetch="git://github.com/SlimRoms"
+           fetch="git://github.com/SlimRoms/"
            review="https://gerrit.slimroms.net/"/>
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
@@ -441,7 +441,6 @@
   <!-- Purity extra-projects -->
   <project path="manifest" name="kangarom_manifest" remote="lostdeveloper" revision="kitkat" />
   <project path="packages/apps/SimpleExplorer" name="SimpleExplorer" remote="lostdeveloper" revision="master" />
-  <project path="packages/apps/DashClock" name="packages_apps_DashClock" remote="lostdeveloper" revision="kk4.4" />
   <project path="vendor/asus" name="platform_vendor_asus" remote="kitkatpurity" revision="kitkat" />
   <project path="vendor/widevine" name="platform_vendor_widevine" remote="kitkatpurity" revision="kitkat" />
   <project path="vendor/nvidia" name="platform_vendor_nvidia" remote="kitkatpurity" revision="kitkat" />
